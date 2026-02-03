@@ -21,15 +21,15 @@ By completing this lab, you will:
 
 ## Duration
 
-Estimated time: 30 minutes
+Estimated time: 15 minutes
 
 ## Contents
 
 | Notebook | Description | Duration |
 |----------|-------------|----------|
-| `01_webhook_fundamentals.ipynb` | Webhook concepts and event types | 15 min |
-| `02_build_server.ipynb` | Building the Flask webhook server | 10 min |
-| `03_test_webhooks.ipynb` | Testing with Stripe CLI | 15 min |
+| `01_webhook_fundamentals.ipynb` | Webhook concepts and event types | 2 min |
+| `02_build_server.ipynb` | Building the Flask webhook server | 3 min |
+| `03_test_webhooks.ipynb` | Testing with Stripe CLI | 10 min |
 
 ## Quick Start
 
@@ -63,7 +63,7 @@ stripe trigger payment_intent.succeeded
 
 ## Environment Variables
 
-Create a `.env` file with:
+At the root of the repo create a `.env` file with:
 
 ```bash
 STRIPE_SECRET_KEY=sk_test_...
@@ -74,7 +74,7 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 
 ## Events Handled
 
-The server handles these event types:
+The server we build handles these event types:
 - `payment_intent.succeeded` - Logs successful payment amounts
 - `payment_method.attached` - Placeholder for payment method handling
 
