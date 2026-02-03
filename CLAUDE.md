@@ -210,27 +210,6 @@ Before submitting a new lab, verify:
 - Pause after each cell to explain output
 - Reference Dashboard to show created resources
 - Have backup slides ready for network issues
-
-### Presenter Notes
-
-Add presenter notes as HTML comments in markdown cells:
-
-```markdown
-<!-- PRESENTER: Pause here to show the Stripe Dashboard -->
-<!-- PRESENTER: Ask audience if they have questions before continuing -->
-```
-
-### Reset Script
-
-Each lab should include a `reset.sh` script:
-
-```bash
-#!/bin/bash
-# Reset lab to initial state
-jupyter nbconvert --clear-output --inplace *.ipynb
-echo "Lab reset complete"
-```
-
 ---
 
 ## Environment and Dependencies

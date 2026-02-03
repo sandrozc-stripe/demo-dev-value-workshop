@@ -20,14 +20,14 @@ By completing this lab, you will:
 
 ## Duration
 
-Estimated time: 45 minutes
+Estimated time: 10 minutes
 
 ## Contents
 
 | Notebook | Description | Duration |
 |----------|-------------|----------|
-| `01_introduction.ipynb` | IaC concepts and Stripe provider overview | 15 min |
-| `02_create_resources.ipynb` | Hands-on resource creation | 30 min |
+| `01_introduction.ipynb` | IaC concepts and Stripe provider overview | 5 min |
+| `02_create_resources.ipynb` | Hands-on resource creation | 5 min |
 
 ## Quick Start
 
@@ -42,11 +42,6 @@ jupyter notebook 01_introduction.ipynb
 ## Terraform Commands Reference
 
 ```bash
-cd terraform/
-
-# Set your API key
-export STRIPE_API_KEY="sk_test_..."
-
 # Initialize provider
 terraform init
 
@@ -92,6 +87,5 @@ Verify your `STRIPE_API_KEY` environment variable is set correctly.
 If resources were created previously, Terraform will detect and manage them. Use `terraform import` to import existing resources.
 
 ## Resources
-
-- [Stripe Terraform Provider Docs](https://registry.terraform.io/providers/stripe/stripe/latest/docs)
+- [Stripe Terraform Docs](https://docs.stripe.com/terraform)
 - [Terraform Getting Started](https://learn.hashicorp.com/terraform)
