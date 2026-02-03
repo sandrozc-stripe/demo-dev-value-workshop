@@ -4,3 +4,6 @@ output "price_id_monthly" {
 output "price_id_yearly" {
   value = stripe_price.pro_yearly.id
 }
+output "customer" {
+  value = stripe_customer.acme.id
+}
