@@ -1,0 +1,16 @@
+[project]
+name = "03-api-testing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "python-dotenv>=1.2.1",
+    "stripe>=14.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+]
