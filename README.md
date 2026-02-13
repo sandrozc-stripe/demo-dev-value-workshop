@@ -8,16 +8,17 @@ This workshop provides interactive Jupyter notebooks that guide you through esse
 
 | Lab | Topic | Duration | Description |
 |-----|-------|----------|-------------|
-| [01-terraform-infrastructure](./01-terraform-infrastructure/) | Infrastructure as Code | 45 min | Manage Stripe resources with Terraform |
-| [02-webhook-integration](./02-webhook-integration/) | Event Handling | 30 min | Build a webhook server for Stripe events |
+| [01-api-testing](./01-api-testing/) | API Testing | 15 min | Test Stripe integrations with sandboxes, test cards, and test clocks |
+| [02-webhook-integration](./02-webhook-integration/) | Event Handling | 15 min | Build a webhook server for Stripe events |
+| [03-terraform-infrastructure](./03-terraform-infrastructure/) | Infrastructure as Code | 10 min | Manage Stripe resources with Terraform |
 
 ## Prerequisites
 
 ### Required Tools
 
 - **Python 3.13+** - For running notebooks and webhook server
-- **Terraform 1.0+** - For Lab 01
 - **Stripe CLI** - For Lab 02 webhook testing
+- **Terraform 1.0+** - For Lab 03
 - **Jupyter Notebook** - For interactive exercises
 
 ### Stripe Account
@@ -36,14 +37,12 @@ cd stripe-developer-tools-workshop
 cp .env.example .env
 # Edit .env with your Stripe API keys
 
-# Install Python dependencies
-pip install -r requirements.txt
-# or with uv:
-uv sync
-
 # Start with Lab 01
-cd 01-terraform-infrastructure
-jupyter notebook 01_introduction.ipynb
+cd 01-api-testing
+
+# Install Python dependencies
+uv sync
+source ./.venv/bin/activate
 ```
 
 ## Workshop Structure
@@ -77,16 +76,6 @@ STRIPE_API_KEY=sk_test_...
 
 # Required for Lab 02 (Webhooks)
 STRIPE_WEBHOOK_SECRET=whsec_...
-```
-
-### Installing Dependencies
-
-```bash
-# Option 1: pip
-pip install stripe python-dotenv jupyter flask
-
-# Option 2: uv (recommended)
-uv sync
 ```
 
 ## Running the Workshop
