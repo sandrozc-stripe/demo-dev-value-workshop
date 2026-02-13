@@ -1,4 +1,4 @@
-# Lab 03: API Testing with Stripe
+# Lab 01: API Testing with Stripe
 
 ## Overview
 
@@ -8,7 +8,6 @@ Learn to test your Stripe integration using sandboxes, test cards, and test cloc
 
 - Python 3.13+
 - Stripe account with sandbox access
-- Completed Lab 01 or Lab 02 (recommended, not required)
 
 ## Learning Objectives
 
@@ -23,7 +22,7 @@ By completing this lab, you will:
 
 ## Duration
 
-Estimated time: 30-45 minutes
+Estimated time: 15 minutes
 
 ## Contents
 
@@ -37,7 +36,7 @@ Estimated time: 30-45 minutes
 
 ```bash
 # Navigate to lab directory
-cd 03-api-testing
+cd 01-api-testing
 
 # Sync depedencies
 uv sync
