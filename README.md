@@ -12,6 +12,7 @@ This workshop provides interactive Jupyter notebooks that guide you through esse
 | [02-webhook-integration](./02-webhook-integration/) | Event Handling | 15 min | Build a webhook server for Stripe events |
 | [03-terraform-infrastructure](./03-terraform-infrastructure/) | Infrastructure as Code | 10 min | Manage Stripe resources with Terraform |
 
+
 ## Prerequisites
 
 ### Required Tools
@@ -45,25 +46,6 @@ uv sync
 source ./.venv/bin/activate
 ```
 
-## Workshop Structure
-
-Each lab follows a consistent pattern:
-
-```
-XX-lab-name/
-├── README.md                    # Lab overview and setup
-├── 01_introduction.ipynb        # Concepts and theory
-├── 02_main_exercise.ipynb       # Hands-on practice
-└── src/ or terraform/           # Source code
-```
-
-### Notebook Flow
-
-1. **Introduction notebook** - Learn the concepts
-2. **Exercise notebook(s)** - Apply hands-on
-3. **Checkpoints** - Verify your progress
-4. **Summary** - Review key takeaways
-
 ## Environment Setup
 
 ### Environment Variables
@@ -78,38 +60,22 @@ STRIPE_API_KEY=sk_test_...
 STRIPE_WEBHOOK_SECRET=whsec_...
 ```
 
-## Running the Workshop
-
-### For Self-Paced Learning
-
-1. Start with Lab 01, complete all notebooks in order
-2. Each lab builds on concepts from previous labs
-3. Follow checkpoints to verify your progress
-
-### For Live Demos
-
-1. Clear notebook outputs before presenting:
-   ```bash
-   jupyter nbconvert --clear-output --inplace **/*.ipynb
-   ```
-2. Have Stripe Dashboard open alongside notebooks
-3. Use presenter notes (HTML comments) for talking points
-4. Follow the three-terminal setup for webhook demos
-
-## Adding New Labs
-
-See [CLAUDE.md](./CLAUDE.md) for conventions and guidelines on creating new labs.
-
-Use the templates in `templates/` as starting points:
-- `templates/lab-template/` - Full lab structure
-- `templates/notebook-template.ipynb` - Notebook template
-
 ## Resources
+
+### Workshop Specific
+
+- [Stripe MCP](https://docs.stripe.com/mcp): Allows AI assistants (Claude, ChatGPT, Cursor...) to interact directly with your Stripe account. You can manage Stripe resources and consult documentation without leaving your development environment.
+- [Webhooks](https://docs.stripe.com/webhooks): Real-time event notifications sent to your infrastructure for successful payments, disputes, or other triggers. For example, this allows you to automate sending emails to customers following a specific Stripe event you are monitoring.
+- [Workflows](https://docs.stripe.com/workflows): A no-code automation tool within the Dashboard to create business logic similar to webhooks, but in a managed way. No deployment required.
+- [Expand Fields](https://docs.stripe.com/expand): Allows you to retrieve related objects in a single API call instead of multiple requests. Useful for reducing latency and simplifying code.
+- [Workbench](https://docs.stripe.com/workbench/overview): Available directly within the Stripe Dashboard, this is a browser-based toolkit for developers. It allows you to monitor and search through all API calls and events. You get full visibility into what’s happening in the Stripe account, and it even includes an integrated CLI.
+
+### General 
 
 - [Stripe Documentation](https://stripe.com/docs)
 - [Stripe API Reference](https://stripe.com/docs/api)
 - [Stripe CLI Documentation](https://stripe.com/docs/cli)
-- [Stripe Terraform Provider](https://registry.terraform.io/providers/stripe/stripe/latest/docs)
+
 
 ## Support
 
