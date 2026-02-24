@@ -62,15 +62,20 @@ STRIPE_WEBHOOK_SECRET=whsec_...
 
 ## Resources
 
-- [Stripe Documentation](https://stripe.com/docs)
-- [Stripe API Reference](https://stripe.com/docs/api)
-- [Stripe CLI Documentation](https://stripe.com/docs/cli)
-- [Stripe Terraform Provider](https://registry.terraform.io/providers/stripe/stripe/latest/docs)
+### Workshop Specific
+
 - [Stripe MCP](https://docs.stripe.com/mcp): Allows AI assistants (Claude, ChatGPT, Cursor...) to interact directly with your Stripe account. You can manage Stripe resources and consult documentation without leaving your development environment.
 - [Webhooks](https://docs.stripe.com/webhooks): Real-time event notifications sent to your infrastructure for successful payments, disputes, or other triggers. For example, this allows you to automate sending emails to customers following a specific Stripe event you are monitoring.
 - [Workflows](https://docs.stripe.com/workflows): A no-code automation tool within the Dashboard to create business logic similar to webhooks, but in a managed way. No deployment required.
 - [Expand Fields](https://docs.stripe.com/expand): Allows you to retrieve related objects in a single API call instead of multiple requests. Useful for reducing latency and simplifying code.
 - [Workbench](https://docs.stripe.com/workbench/overview): Available directly within the Stripe Dashboard, this is a browser-based toolkit for developers. It allows you to monitor and search through all API calls and events. You get full visibility into what’s happening in the Stripe account, and it even includes an integrated CLI.
+
+### General 
+
+- [Stripe Documentation](https://stripe.com/docs)
+- [Stripe API Reference](https://stripe.com/docs/api)
+- [Stripe CLI Documentation](https://stripe.com/docs/cli)
+
 
 ## Support
 
