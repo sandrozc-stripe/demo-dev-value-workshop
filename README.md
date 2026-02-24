@@ -46,7 +46,6 @@ uv sync
 source ./.venv/bin/activate
 ```
 
-
 ## Environment Setup
 
 ### Environment Variables
@@ -60,8 +59,6 @@ STRIPE_API_KEY=sk_test_...
 # Required for Lab 02 (Webhooks)
 STRIPE_WEBHOOK_SECRET=whsec_...
 ```
-
-
 
 ## Resources
 
