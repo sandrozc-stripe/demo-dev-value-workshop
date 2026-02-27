@@ -18,11 +18,11 @@ Imagine your team has received a **health alert**: there's an increase in failed
 
 1. **Open Workbench** via the **Developer** menu.
 
-<img src="https://github.com/user-attachments/assets/6b8b354d-eacd-406a-bd0c-4dc3e82db4a7" alt="Workbench overview" width="720" />
+  <img src="04-workbench/images/Workbench overview.png" alt="Workbench overview" width="720" />
 
 2. **In real scenarios, you may receive and review the health alert** — it signals a potential problem with your integration (e.g. a spike in failed payments) and helps you detect backend issues before they impact customers. See more under the **Health** tab.
 
-<img src="https://github.com/user-attachments/assets/5f3f9aba-f561-4e4e-9c25-19e7ad714cb6" alt="Health Alert" width="720" />
+  <img src="04-workbench/images/Health_Alert.png" alt="Health Alert" width="720" />
 
 **Goal for this workshop:** Simulate payments that result in errors so you can understand how Workbench's toolset can be used to investigate, diagnose, and fix issues.
 
@@ -54,7 +54,7 @@ stripe products create \
 
 2. **Observe the API Explorer** — as you type the call, the panel on the right populates the parameters. You can tweak parameters in a tabular format without editing JSON manually.
 
-<img src="https://github.com/user-attachments/assets/4d4950b2-3a2c-4d6a-b6ed-170a70c9176f" alt="Product call" width="720" />
+  <img src="04-workbench/images/Product call.png" alt="Product call" width="720" />
 
 3. **Inspect the result** in Workbench's **Inspector**: open the product object in JSON, drill into objects, and explore their relationships.
 4. **Note the hierarchy:** Product → Price → IDs.
@@ -79,7 +79,7 @@ stripe checkout sessions create \
 4. **Use the response:** the call returns a hosted Checkout page URL for sandbox payments. Behind the scenes it creates **PaymentIntent**, **Customer**, and **Charge**.
 5. **Open the URL** from the response body in your browser to reach the hosted checkout page.
 
-<img src="https://github.com/user-attachments/assets/332dd694-ace6-4412-b2c6-cefcbac78384" alt="Checkout page" width="420" />
+  <img src="04-workbench/images/checkoutpage.png" alt="Checkout page" width="420" />
 
 ---
 
@@ -104,9 +104,9 @@ stripe checkout sessions create \
 3. **Click an event** and open its payload.
 4. **Find the `last_payment_error` parameter** and check the decline code for each test.
 
-<img src="https://github.com/user-attachments/assets/911170be-ed84-4e5e-b81c-170832cba4dc" alt="Processing error" width="560" />
+  <img src="04-workbench/images/Processing_error.png" alt="Processing error" width="560" />
 
-<img src="https://github.com/user-attachments/assets/da28de7c-0e70-4135-b156-b02184f77645" alt="Stolen card" width="560" />
+  <img src="04-workbench/images/Stolen_card.png" alt="Stolen card" width="560" />
 
 5. **Interpret the results:** Some errors (e.g. expired cards, incorrect CVC) are shown to the customer at checkout; others are only visible to the backend. Workbench shows what Stripe attempted to deliver, even on failure, which makes **hidden errors** easy to investigate. In this exercise, failures include stolen card, lost card, and processing errors.
 
@@ -121,7 +121,7 @@ To proactively monitor issues like a rise in payment failures, add a webhook end
 3. **Select** the `payment_intent.payment_failed` event.
 4. **Add the endpoint URL** that will receive these events.
 
-<img src="https://github.com/user-attachments/assets/17b4ae13-00f3-4af2-89ca-b8eddc1a4c47" alt="Webhook" width="720" />
+  <img src="04-workbench/images/Webhook.png" alt="Webhook" width="720" />
 
 ---
 
@@ -129,12 +129,12 @@ To proactively monitor issues like a rise in payment failures, add a webhook end
 
 1. **Open the Blueprints section** in Workbench — it contains prebuilt examples for common workflows.
 
-<img src="https://github.com/user-attachments/assets/91a27df8-cecc-4d42-bd1a-e07716dcecbd" alt="Blueprints tab" width="720" />
+  <img src="04-workbench/images/blueprints tab.png" alt="Blueprints tab" width="720" />
 
 2. **Pick a Blueprint** — each one provides ready-to-use code snippets and API calls that can be run in full or in steps.
 3. **Run through a workflow** of your choice to accelerate implementing standard integrations.
 
-<img src="https://github.com/user-attachments/assets/a7c565ce-a9ff-4275-a993-1d1715b72288" alt="Example blueprint" width="640" />
+  <img src="04-workbench/images/Example blueprint.png" alt="Example blueprint" width="640" />
 
 ---
 
