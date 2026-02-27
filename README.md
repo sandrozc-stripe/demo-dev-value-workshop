@@ -11,6 +11,7 @@ This workshop provides interactive Jupyter notebooks that guide you through esse
 | [01-api-testing](./01-api-testing/) | API Testing | 15 min | Test Stripe integrations with sandboxes, test cards, and test clocks |
 | [02-webhook-integration](./02-webhook-integration/) | Event Handling | 15 min | Build a webhook server for Stripe events |
 | [03-terraform-infrastructure](./03-terraform-infrastructure/) | Infrastructure as Code | 10 min | Manage Stripe resources with Terraform |
+| [04-workbench](./04-workbench/) | Workbench | 10 min | Inspect, Monitor and Debug |
 
 
 ## Prerequisites
