@@ -18,7 +18,7 @@ Imagine your team has received a **health alert**: there's an increase in failed
 
 1. **Open Workbench** via the **Developer** menu.
 
-  <img src="04-workbench/images/Workbench overview.png" alt="Workbench overview" width="720" />
+  <img src="04-workbench/images/Workbench_overview.png" alt="Workbench overview" width="720" />
 
 2. **In real scenarios, you may receive and review the health alert** — it signals a potential problem with your integration (e.g. a spike in failed payments) and helps you detect backend issues before they impact customers. See more under the **Health** tab.
 
@@ -54,7 +54,7 @@ stripe products create \
 
 2. **Observe the API Explorer** — as you type the call, the panel on the right populates the parameters. You can tweak parameters in a tabular format without editing JSON manually.
 
-  <img src="04-workbench/images/Product call.png" alt="Product call" width="720" />
+  <img src="04-workbench/images/Product_call.png" alt="Product call" width="720" />
 
 3. **Inspect the result** in Workbench's **Inspector**: open the product object in JSON, drill into objects, and explore their relationships.
 4. **Note the hierarchy:** Product → Price → IDs.
@@ -134,7 +134,7 @@ To proactively monitor issues like a rise in payment failures, add a webhook end
 2. **Pick a Blueprint** — each one provides ready-to-use code snippets and API calls that can be run in full or in steps.
 3. **Run through a workflow** of your choice to accelerate implementing standard integrations.
 
-  <img src="04-workbench/images/Example blueprint.png" alt="Example blueprint" width="640" />
+  <img src="04-workbench/images/Example_blueprint.png" alt="Example blueprint" width="640" />
 
 ---
 
